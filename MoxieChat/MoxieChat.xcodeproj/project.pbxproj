@@ -15,6 +15,11 @@
 		BE5005991C1583BF004CC3F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5005971C1583BF004CC3F5 /* LaunchScreen.storyboard */; };
 		BE5005A41C1583BF004CC3F5 /* MoxieChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5005A31C1583BF004CC3F5 /* MoxieChatTests.m */; };
 		BE5005AF1C1583BF004CC3F5 /* MoxieChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5005AE1C1583BF004CC3F5 /* MoxieChatUITests.m */; };
+		BE5005C51C15903E004CC3F5 /* CHANGELOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE5005BD1C15903E004CC3F5 /* CHANGELOG.txt */; };
+		BE5005C61C15903E004CC3F5 /* MoxtraConversationResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE5005C01C15903E004CC3F5 /* MoxtraConversationResources.bundle */; };
+		BE5005C71C15903E004CC3F5 /* MoxtraConversationSDK in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5005C11C15903E004CC3F5 /* MoxtraConversationSDK */; };
+		BE5005C81C15903E004CC3F5 /* VERSION in Resources */ = {isa = PBXBuildFile; fileRef = BE5005C31C15903E004CC3F5 /* VERSION */; };
+		BE5005C91C15903E004CC3F5 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = BE5005C41C15903E004CC3F5 /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,13 @@
 		BE5005AA1C1583BF004CC3F5 /* MoxieChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoxieChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5005AE1C1583BF004CC3F5 /* MoxieChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoxieChatUITests.m; sourceTree = "<group>"; };
 		BE5005B01C1583BF004CC3F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE5005BD1C15903E004CC3F5 /* CHANGELOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.txt; sourceTree = "<group>"; };
+		BE5005BF1C15903E004CC3F5 /* Moxtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Moxtra.h; sourceTree = "<group>"; };
+		BE5005C01C15903E004CC3F5 /* MoxtraConversationResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MoxtraConversationResources.bundle; sourceTree = "<group>"; };
+		BE5005C11C15903E004CC3F5 /* MoxtraConversationSDK */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = MoxtraConversationSDK; sourceTree = "<group>"; };
+		BE5005C21C15903E004CC3F5 /* MXClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXClient.h; sourceTree = "<group>"; };
+		BE5005C31C15903E004CC3F5 /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
+		BE5005C41C15903E004CC3F5 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5005C71C15903E004CC3F5 /* MoxtraConversationSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,7 @@
 		BE50057D1C1583BF004CC3F5 = {
 			isa = PBXGroup;
 			children = (
+				BE5005BC1C15903E004CC3F5 /* Moxtra_Chat_Meet */,
 				BE5005881C1583BF004CC3F5 /* MoxieChat */,
 				BE5005A21C1583BF004CC3F5 /* MoxieChatTests */,
 				BE5005AD1C1583BF004CC3F5 /* MoxieChatUITests */,
@@ -138,6 +152,28 @@
 				BE5005B01C1583BF004CC3F5 /* Info.plist */,
 			);
 			path = MoxieChatUITests;
+			sourceTree = "<group>";
+		};
+		BE5005BC1C15903E004CC3F5 /* Moxtra_Chat_Meet */ = {
+			isa = PBXGroup;
+			children = (
+				BE5005BD1C15903E004CC3F5 /* CHANGELOG.txt */,
+				BE5005BE1C15903E004CC3F5 /* MoxtraConversationSDK.sdk */,
+				BE5005C41C15903E004CC3F5 /* README.txt */,
+			);
+			path = Moxtra_Chat_Meet;
+			sourceTree = "<group>";
+		};
+		BE5005BE1C15903E004CC3F5 /* MoxtraConversationSDK.sdk */ = {
+			isa = PBXGroup;
+			children = (
+				BE5005BF1C15903E004CC3F5 /* Moxtra.h */,
+				BE5005C01C15903E004CC3F5 /* MoxtraConversationResources.bundle */,
+				BE5005C11C15903E004CC3F5 /* MoxtraConversationSDK */,
+				BE5005C21C15903E004CC3F5 /* MXClient.h */,
+				BE5005C31C15903E004CC3F5 /* VERSION */,
+			);
+			path = MoxtraConversationSDK.sdk;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +282,10 @@
 				BE5005991C1583BF004CC3F5 /* LaunchScreen.storyboard in Resources */,
 				BE5005961C1583BF004CC3F5 /* Assets.xcassets in Resources */,
 				BE5005941C1583BF004CC3F5 /* Main.storyboard in Resources */,
+				BE5005C81C15903E004CC3F5 /* VERSION in Resources */,
+				BE5005C61C15903E004CC3F5 /* MoxtraConversationResources.bundle in Resources */,
+				BE5005C91C15903E004CC3F5 /* README.txt in Resources */,
+				BE5005C51C15903E004CC3F5 /* CHANGELOG.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +538,7 @@
 				BE5005B51C1583BF004CC3F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE5005B61C1583BF004CC3F5 /* Build configuration list for PBXNativeTarget "MoxieChatTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +547,7 @@
 				BE5005B81C1583BF004CC3F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE5005B91C1583BF004CC3F5 /* Build configuration list for PBXNativeTarget "MoxieChatUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +556,7 @@
 				BE5005BB1C1583BF004CC3F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
